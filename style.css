@@ -1,0 +1,99 @@
+@font-face {
+    font-family: fast-hand;
+    src: url(fast-hand-font/FastHand-lgBMV.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #FF6584;
+    --secondary-color: #ffffff;
+    --teriary-color: #000000;
+    --light-text: rgb(78, 78, 78);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 300;
+    font-family: fast-hand;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 200px;
+}
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.dashboard {
+    min-height: 100vh;
+    padding: 60px;
+    background-image: url(/img/stars-and-space.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 12px;
+}
+
+.game-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+}
+
+.game-icon {
+    width: 130px;
+    height: 130px;
+}
