@@ -97,3 +97,92 @@ h5 {
     width: 130px;
     height: 130px;
 }
+
+.player-console {
+    height: 470px;
+    width: 300px;
+
+    background-color: var(--secondary-color);
+    margin: 0px 25px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.player-console img {
+    height: 200px;
+    width: 200px;
+
+    position: absolute;
+    top: 30%;
+    left: 50;
+}
+
+.name-entry{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.name-entry h5 {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+input {
+    font-size: 20px;
+    color: var(--teriary-color);
+    border: none;
+    border-bottom: 1px solid var(--teriary-color);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+    outline: none !important;
+}
+
+#start-restart {
+    width: 80%;
+    height: 60px;
+    background-color: green;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#start-restart:hover {
+    background-color: var(--teriary-color);
+    cursor: pointer;
+}
+
+.named {
+    font-family: fast-hand;
+    font-size: 40px;
+}
+
+.restart {
+    background-color: red !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.output {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
